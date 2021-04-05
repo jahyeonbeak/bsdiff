@@ -41,7 +41,7 @@ Reference
 
 ### bspatch
 
-	int main_bspatch_mem(u_char *patchBuf, unsigned int patchLen, ssize_t patchOffset, u_char *oldBuf, unsigned int oldLen, u_char *newBuf, unsigned int newLen);
+	int bspatch(u_char *patchBuf, unsigned int patchLen, ssize_t patchOffset, u_char *oldBuf, unsigned int oldLen, u_char *newBuf, unsigned int newLen);
 
 The `bspatch` function transforms the data for a file using data generated from
 `bsdiff`. The caller takes care of loading the old file and allocating space for
